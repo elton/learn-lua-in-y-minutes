@@ -317,9 +317,9 @@ seymour:makeSound()  -- 'woof woof woof'      -- 4.
 --    等价于LoudDog.makeSound(seymour)。 
 
 -- 如果有必要，子类也可以有new()，与基类相似： 
-function LoudDog:new() 
-  local newObj = {} 
-  -- 初始化newObj 
-  self.__index = self 
-  return setmetatable(newObj, self) 
-end 
+function LoudDog:new()
+  local newObj = {}
+  -- 初始化newObj
+  self.__index = self
+  return setmetatable(newObj, self)
+end
